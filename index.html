@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dear Crush!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section class="text-gray-400 bg-gray-900 body-font">
@@ -22,16 +22,7 @@
   </div>
 </section>
     <button id="bouncing" class="btn btn-primary">Click Me</button>
-	<script>
-    var button = document.querySelector("button");
 
-button.addEventListener("click", function() {
-  var changeTop = (Math.random() * ($(window).height() - $("button").height()));
-  var changeLeft = (Math.random() * ($(window).width() - $("button").width()));
-  $("button").css("margin-top", changeTop + "px");
-  $("button").css("margin-left", changeLeft + "px");
-});
-    </script>
   </body>
 </html>
 
